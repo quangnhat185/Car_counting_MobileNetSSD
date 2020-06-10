@@ -3,7 +3,7 @@
 <p align = "center"><img src="./processe_video.gif" width = 1024></p>
 
 ## Set up environment
-```bash
+```
 cd Car_counting_MobileNetSSD
 .\env\Scripts\activate.bat
 pip install -r requirement.txt
