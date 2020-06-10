@@ -4,20 +4,20 @@
 
 ## Set up environment
 ```bash
-cd Car_counting
-.env\Scripts\activate.bat
+cd Car_counting_MobileNetSSD
+.\env\Scripts\activate.bat
 pip install -r requirement.txt
 ```
 
-## Run run the script
+## Run the script
 
 Without saving processed footage:
-```bash
+```
 python car_counting.py -v test_video.mp4
 ```
 
 Saving processed footage:
-```bash
+```
 python car_counting.py -v test_video.mp4 -s True
 ```
 ## Set of flags
@@ -33,7 +33,7 @@ optional arguments:
 ```
 
 ## Credit
-[Adrian Rosebrok-Pyimagesearch](https://www.pyimagesearch.com/2019/12/02/opencv-vehicle-detection-tracking-and-speed-estimation/)
+[Adrian Rosebrok - Pyimagesearch: OpenCV Vehicle Detection, Tracking, and Speed Estimation](https://www.pyimagesearch.com/2019/12/02/opencv-vehicle-detection-tracking-and-speed-estimation/)
 
 ## License
 [MIT License](./LICENSE)
