@@ -6,7 +6,7 @@
 ```
 cd Car_counting_MobileNetSSD
 .\env\Scripts\activate.bat
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 
 ## Run the script
