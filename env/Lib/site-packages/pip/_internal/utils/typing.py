@@ -18,7 +18,7 @@ curious maintainer can reach here to read this.
 
 In pip, all static-typing related imports should be guarded as follows:
 
-    from pip.utils.typing import MYPY_CHECK_RUNNING
+    from pip._internal.utils.typing import MYPY_CHECK_RUNNING
 
     if MYPY_CHECK_RUNNING:
         from typing import ...
@@ -27,3 +27,12 @@ Ref: https://github.com/python/mypy/issues/3216
 """
 
 MYPY_CHECK_RUNNING = False
+
+
+if MYPY_CHECK_RUNNING:
+    from typing import cast
+else:
+    # typing's cast() is needed at runtime, but we don't want to import typing.
+    # Thus, we use a dummy no-op version, which we tell mypy to ignore.
+    def cast(type_, value):  # type: ignore
+        return value
