@@ -20,7 +20,7 @@ Saving processed footage:
 ```
 python car_counting.py -v test_video.mp4 -s True
 ```
-## Set of flags
+## Usages
 
 ```
 optional arguments:
