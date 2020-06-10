@@ -36,4 +36,6 @@ optional arguments:
 [Adrian Rosebrok - Pyimagesearch: OpenCV Vehicle Detection, Tracking, and Speed Estimation](https://www.pyimagesearch.com/2019/12/02/opencv-vehicle-detection-tracking-and-speed-estimation/)
 
 ## License
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
 [MIT License](./LICENSE)
