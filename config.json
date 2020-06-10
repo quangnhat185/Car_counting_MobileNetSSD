@@ -1,0 +1,45 @@
+{
+	// maximum consecutive frames a given object is allowed to be
+	// marked as "disappeared" until we need to deregister the object
+	// from tracking
+	"max_disappear": 50,
+
+	// maximum distance between centroids to associate an object --
+	// if the distance is larger than this maximum distance we'll
+	// start to mark the object as "disappeared"
+	"max_distance": 200,
+
+	// number of frames to perform object tracking instead of object
+	// detection
+	"track_object": 10,
+
+	// minimum confidence
+	"confidence": 0.1,
+
+	// frame width in pixels
+	"frame_width": 400,
+
+
+	// real world distance in meters
+	"distance": 16,
+
+	// speed limit in mph
+	"speed_limit": 17,
+
+	// flag indicating if the frame must be displayed
+	"display": true,
+
+	// path the object detection model
+	"model_path": "./MobileNetSSD/MobileNetSSD_deploy.caffemodel",
+
+	// path to the prototxt file of the object detection model
+	"prototxt_path": "./MobileNetSSD/MobileNetSSD_deploy.prototxt",
+
+	// output directory and csv file name
+	"output_path": "output",
+	"csv_name": "log.csv",
+	
+	// counting line vertical coordinate 
+	// increase this value shiftiing the line up
+	"line_coordinate": 250
+}
